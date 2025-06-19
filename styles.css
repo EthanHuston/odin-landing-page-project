@@ -2,6 +2,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -21,6 +22,7 @@ a {
 .header,
 .footer {
   height: 64px;
+  background-color: #1f2937;
 }
 
 /* Header styles */
@@ -31,6 +33,9 @@ a {
   padding: 16px;
 }
 .header-logo {
+  color: #f9faf8;
+  font-size: 24px;
+  font-weight: 900;
   margin-left: 96px;
 }
 .header-links {
@@ -38,47 +43,91 @@ a {
   gap: 8px;
   margin-right: 96px;
 }
+.header a {
+  color: #e5e7eb;
+  font-size: 18px;
+}
 
 /* Hero styles */
 .hero-container {
+  background-color: #1f2937;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
   padding: 64px;
 }
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  color: white;
+  height: 200px;
+  width: 400px;
+}
+.hero-content h1 {
+  font-size: 48px;
+  color: #f9faf8;
+  font-weight: 900;
+}
+.hero-content p {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+.hero-content button {
+  background-color: #3882f6;
+  color: white;
+}
 
 /* Info Section Styles */
 .info-container {
   display: flex;
   flex-direction: column;
-
   justify-content: center;
   align-items: center;
+  padding: 32px 0px 64px 0px;
+  gap: 32px;
+}
+.info-container h2 {
+  color: #1f2937;
+  font-size: 36px;
+  font-weight: 900;
 }
 .box-list {
   display: flex;
-  gap: 16px;
+  gap: 48px;
 }
 .box-combo {
   max-width: 100px;
 }
 .box {
-  border: 2px solid blue;
+  border: 2px solid #3882f6;
   border-radius: 10%;
   width: 100px;
   height: 100px;
+  margin-bottom: 8px;
+}
+.box-text {
+  font-size: 10px;
+  color: #5a5d63;
+  text-align: center;
 }
 
 /* Quote styles */
 .quote-container {
+  background-color: #e5e7eb;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 150px;
 }
 .quote-text {
-  max-width: 200px;
+  font-size: 36px;
+  font-weight: light;
+  font-style: italic;
+  color: #1f2937;
+  width: 200px;
 }
 .quote-author {
   align-self: flex-end;
@@ -93,16 +142,26 @@ a {
 .action-content {
   display: flex;
   padding: 28px;
-  background-color: blue;
+  background-color: #3882f6;
   border-radius: 25%;
 }
 .action-text {
+  color: white;
   display: flex;
   flex-direction: column;
+}
+
+.action-button {
+  color: white;
+  border: 2px solid white;
+  border-radius: 10%;
+  background-color: #3882f6;
 }
 /* Footer Styles */
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #e5e7eb;
+  font-size: 18px;
 }
